@@ -1,0 +1,11 @@
+We first set up the new Amazon Web Services using EC2. We can run our files on the cloud servers. Usually the cloud servers have larger memory and more CPUs to process different tasks simultaneously.
+ 
+Then we learned some common command line orders in Linux environment. Linux has four important properties: performance, functionality, flexibility and portability. Many scientific application and libraries are developed under Linux for its high performance. Many tools can be used under Linux, so it is highly flexible.
+
+Then we covered the version control system Git. Git can help us keep track of all changes we have made, and we can use it to create different versions of files. Repos can be pulled from different computers and people can collaborate together with Git. 
+
+We also covered Vim, a lightweight text editor. It allows you to perform tasks quick. 
+
+Shell is a program that runs the other programs. Shell provides a simple language. A number of commands can be written into scripts and shell can run that scripts easily. 
+
+PyCharm is a Python IDE.
