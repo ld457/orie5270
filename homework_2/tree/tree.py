@@ -39,7 +39,7 @@ class Tree(object):
 
         return height
 
-    def print_tree(self, is_print=True):
+    def print_tree(self, is_print=False):
         """
         Print the tree.
 
