@@ -22,12 +22,3 @@ def txt_to_graph(name_txt_file):
 
     graph_dict = dict(zip(node_list, edge_list))
     return graph_dict
-
-
-if __name__ == '__main__':
-    import os
-
-    cwd = os.getcwd()
-    print cwd
-    graph_dict = txt_to_graph('dijkstra.txt')
-    print graph_dict

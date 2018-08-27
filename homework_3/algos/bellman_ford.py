@@ -60,9 +60,10 @@ def find_negative_circles(name_txt_file):
             if node in neg_circle[:-1]:
                 break
         neg_circle = neg_circle[idx:]
-    return neg_circle
+        return neg_circle
+    else:
+        return None
 
 # if __name__ == '__main__':
-#     negative_circle = find_negative_circles(name_txt_file='../bellman_ford.txt')
+#     negative_circle = find_negative_circles(name_txt_file='../bellman_2.txt')
 #     print negative_circle
-
