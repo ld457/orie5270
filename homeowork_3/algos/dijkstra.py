@@ -11,7 +11,8 @@ def find_shortest_path(name_txt_file, source, destination):
     :param name_txt_file: (str) the name of the text file for the graph
     :param source: (float) the starting node of a path
     :param destination: (float) the end node of a path
-    :return: dist, path: (tuple) dist: (float) the distance of the shortest path; path: the shortest path
+    :return: dist, path: (tuple) dist: (float) the distance of the shortest path;
+                                 path: the shortest path
     """
 
     graph_dict = txt_to_graph(name_txt_file)
@@ -46,7 +47,6 @@ def find_shortest_path(name_txt_file, source, destination):
 
     return dist[destination], path
 
-
-if __name__ == '__main__':
-    dist, path = find_shortest_path(name_txt_file='dijkstra.txt', source=1., destination=6.)
-    print dist, path
+# if __name__ == '__main__':
+#     dist, path = find_shortest_path(name_txt_file='../dijkstra.txt', source=1., destination=6.)
+#     print dist, path

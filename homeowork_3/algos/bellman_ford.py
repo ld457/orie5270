@@ -65,3 +65,4 @@ def find_negative_circles(name_txt_file):
 # if __name__ == '__main__':
 #     negative_circle = find_negative_circles(name_txt_file='../bellman_ford.txt')
 #     print negative_circle
+
