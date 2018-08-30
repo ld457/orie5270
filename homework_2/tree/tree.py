@@ -76,7 +76,7 @@ class Tree(object):
         if is_print:
             # Print the tree
             for i in tree_list:
-                print "".join(i)
+                print("".join(i))
 
         return tree_list
 
@@ -89,6 +89,20 @@ class Node(object):
         self.right = right
 
 # if __name__ == '__main__':
+#     b = Node(2, None, None)
+#     c = Node(3, None, None)
+#     d = Node(4, None, None)
+#     e = Node(5, None, None)
+#     h = Node(8, None, None)
+#     i = Node(9, None, b)
+#     j = Node(10, c, d)
+#     k = Node(11, e, None)
+#     ll = Node(12, None, h)
+#     m = Node(13, i, j)
+#     n = Node(14, k, ll)
+#     o = Node(15, m, n)
+#     tree = Tree(o)
+#     tree.print_tree(is_print=True)
 #     t21 = Node(4, None, None)
 #     t22 = Node(5, None, None)
 #     t23 = Node(6, None, None)
