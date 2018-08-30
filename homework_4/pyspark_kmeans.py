@@ -44,7 +44,7 @@ def pyspark_kmeans(data_txt, centroid_txt):
         cluster_sum = assigned_data.mapValues(lambda l: (l, 1)).reduceByKey(lambda a, b: (a[0] + b[0], a[1] + b[1]))
         centroid = cluster_sum.map(lambda l: l[1][0] / l[1][1]).collect()
 
-        write_centroid(centroid)
+    write_centroid(centroid)
 
 
 if __name__ == '__main__':
