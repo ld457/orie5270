@@ -1,7 +1,8 @@
-import sys
 from heapq import heappush, heappop
 
-from txt_to_graph import txt_to_graph
+import numpy as np
+
+from algos.txt_to_graph import txt_to_graph
 
 
 def find_shortest_path(name_txt_file, source, destination):
@@ -20,7 +21,7 @@ def find_shortest_path(name_txt_file, source, destination):
     settled = []
     frontier = [source]
 
-    dist = dict(zip(graph_dict.keys(), [sys.maxint]*len(graph_dict.values())))
+    dist = dict(zip(graph_dict.keys(), [np.inf]*len(graph_dict.values())))
     dist[source] = 0.
 
     pre_point = dict(zip(graph_dict.keys(), [None]*len(graph_dict)))
@@ -49,4 +50,4 @@ def find_shortest_path(name_txt_file, source, destination):
 
 # if __name__ == '__main__':
 #     dist, path = find_shortest_path(name_txt_file='../dijkstra.txt', source=1., destination=6.)
-#     print dist, path
+#     print(dist, path)

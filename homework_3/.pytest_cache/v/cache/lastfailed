@@ -1,1 +1,4 @@
-{}
+{
+  "tests/test_bellman.py::TestBellman": true,
+  "tests/test_dijkstra.py::TestDijkstra": true
+}

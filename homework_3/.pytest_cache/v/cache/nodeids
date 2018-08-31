@@ -1,5 +1,5 @@
 [
-  "tests/test_bellman.py::TestBellman::test_bellman_1", 
-  "tests/test_bellman.py::TestBellman::test_bellman_2", 
+  "tests/test_bellman.py::TestBellman::test_bellman_1",
+  "tests/test_bellman.py::TestBellman::test_bellman_2",
   "tests/test_dijkstra.py::TestDijkstra::test_dijkstra"
 ]

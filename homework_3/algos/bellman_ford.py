@@ -1,7 +1,8 @@
-import sys
 import copy
 
-from txt_to_graph import txt_to_graph
+import numpy as np
+
+from algos.txt_to_graph import txt_to_graph
 
 
 def find_negative_circles(name_txt_file):
@@ -14,14 +15,14 @@ def find_negative_circles(name_txt_file):
     graph_dict = txt_to_graph(name_txt_file)
     num_node = len(graph_dict)
 
-    for node, edges in graph_dict.iteritems():
+    for node, edges in graph_dict.items():
         edges.append(('sink', 0.))
 
     graph_dict['sink'] = []
 
     node_list = graph_dict.keys()
 
-    dist = dict(zip(node_list, [sys.maxint] * num_node))
+    dist = dict(zip(node_list, [np.inf] * num_node))
     dist['sink'] = 0.
 
     path_dict = {}
@@ -66,4 +67,4 @@ def find_negative_circles(name_txt_file):
 
 # if __name__ == '__main__':
 #     negative_circle = find_negative_circles(name_txt_file='../bellman_2.txt')
-#     print negative_circle
+#     print(negative_circle)
