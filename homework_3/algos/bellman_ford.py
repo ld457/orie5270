@@ -2,7 +2,7 @@ import copy
 
 import numpy as np
 
-from algos.txt_to_graph import txt_to_graph
+from txt_to_graph import txt_to_graph
 
 
 def find_negative_circles(name_txt_file):
@@ -65,6 +65,6 @@ def find_negative_circles(name_txt_file):
     else:
         return None
 
-# if __name__ == '__main__':
-#     negative_circle = find_negative_circles(name_txt_file='../bellman_2.txt')
-#     print(negative_circle)
+if __name__ == '__main__':
+    negative_circle = find_negative_circles(name_txt_file='../bellman_ford_1.txt')
+    print(negative_circle)

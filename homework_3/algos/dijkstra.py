@@ -2,7 +2,7 @@ from heapq import heappush, heappop
 
 import numpy as np
 
-from algos.txt_to_graph import txt_to_graph
+from txt_to_graph import txt_to_graph
 
 
 def find_shortest_path(name_txt_file, source, destination):
@@ -48,6 +48,6 @@ def find_shortest_path(name_txt_file, source, destination):
 
     return dist[destination], path
 
-# if __name__ == '__main__':
-#     dist, path = find_shortest_path(name_txt_file='../dijkstra.txt', source=1., destination=6.)
-#     print(dist, path)
+if __name__ == '__main__':
+    dist, path = find_shortest_path(name_txt_file='../dijkstra_1.txt', source=1., destination=4.)
+    print(dist, path)
